@@ -15,15 +15,15 @@ The -D flag stands for --save-dev and is used to install a package as a developm
 
 In the case of npm install -D tailwindcss, the tailwindcss package would be installed as a development dependency for the current project. This means that it would be listed in the devDependencies section of the project's package.json file, and it would not be included in the production bundle when the application is built for deployment.
 
-Run:
+To generate the tailwind.config.js file. Run the npx command:
 ```
 npx tailwindcss init
 ```
-to generate the tailwind.config.js file.
 
 Update the content in tailwind.config.js:
+```
 content: ["./src/**/*.{html,js}"]
-
+```
 Start tailwind CLI build process:
 ```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
